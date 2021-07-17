@@ -4,6 +4,7 @@ import json
 from random import sample
 
 from app import app
+from app.docker.run_docker import run_docker_script
 
 
 @app.route('/')
@@ -22,3 +23,11 @@ def random():
     result = [cards[i] for i in sample(range(len(cards)), 3)]
 
     return {'cards': result}
+
+
+@app.route('/start')
+def start():
+    res = run_docker_script()
+
+    return {'container_id': res}
+

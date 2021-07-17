@@ -9,3 +9,4 @@ class Config(object):
     JSONIFY_PRETTYPRINT_REGULAR = True
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
