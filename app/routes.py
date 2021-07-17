@@ -1,7 +1,10 @@
 import os
 import json
 
+from random import sample
+
 from app import app
+
 
 @app.route('/')
 @app.route('/index')
@@ -11,9 +14,11 @@ def index():
 
 @app.route('/random')
 def random():
-    data = {}
+    cards = {}
     cards_path = os.path.join(app.static_folder, 'resources', 'cards.json')
-    with open(cards_path) as cards:
-        data = json.load(cards)
+    with open(cards_path) as raw_cards:
+        cards = json.load(raw_cards)
 
-    return {'cards': data}
+    result = [cards[i] for i in sample(range(len(cards)), 3)]
+
+    return {'cards': result}
