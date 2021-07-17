@@ -1,0 +1,43 @@
+[
+  {
+    "title": "first",
+    "effects": {
+      "coins": "1",
+      "damage": "2",
+      "heal": "3"
+    }
+  },
+  {
+    "title": "second",
+    "effects": {
+      "coins": "1",
+      "damage": "2",
+      "heal": "3"
+    }
+  },
+  {
+    "title": "third",
+    "effects": {
+      "coins": "1",
+      "damage": "2",
+      "heal": "3"
+    }
+  },
+    {
+    "title": "fourth",
+    "effects": {
+      "coins": "1",
+      "damage": "2",
+      "heal": "3"
+    }
+  },
+    {
+    "title": "fifth",
+    "effects": {
+      "coins": "1",
+      "damage": "2",
+      "heal": "3"
+    }
+  }
+
+]
