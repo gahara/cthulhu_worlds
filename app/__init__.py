@@ -10,6 +10,7 @@ app.config.from_object(Config)
 
 redis_conn = redis.Redis(
     host=os.getenv("REDIS_HOST", "127.0.0.1"),
-    port=os.getenv("REDIS_PORT", "6379"))
+    port=os.getenv("REDIS_PORT", "6379"),
+    decode_responses=True)
 
 from app import routes
