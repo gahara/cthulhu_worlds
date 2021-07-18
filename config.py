@@ -10,3 +10,5 @@ class Config(object):
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+    REDIS_URI = 'redis://localhost:6379'
+
